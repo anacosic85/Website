@@ -1,0 +1,21 @@
+
+<!--
+Category Listing page - dynamic page that will be populated from the database, depending on which link is clicked
+-->
+
+
+<div class="topnav" id="myTopnav"> <a href="index.php" class="active">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn">Properties <i class="fa fa-caret-down"></i> </button>
+		<div class="dropdown-content"> <a href="displayallproperties.php">All Properties</a> <a href="residential.php?categoryid=1">Residential</a> <a href="commercial.php?categoryid=2">Commercial</a> <a href="sites.php?categoryid=3">Sites</a> </div>
+	</div> <a href="propertymanagement1.php">Property Management</a> <a href="insight.php">Insight & Advice</a> <a href="getcomments.php">Testimonials</a> <a href="contact.php">Contact Us</a> <a href="aboutus.php">About Us</a> <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> </div>
+<script>
+function myFunction() {
+	var x = document.getElementById("myTopnav");
+	if(x.className === "topnav") {
+		x.className += " responsive";
+	} else {
+		x.className = "topnav";
+	}
+}
+</script>
